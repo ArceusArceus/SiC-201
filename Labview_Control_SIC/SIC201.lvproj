@@ -1,10 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="20008000">
-	<Property Name="CCSymbols" Type="Str">Positioner_Mode,PI;Pulse_Mode,ASG8100;Counter_Mode,NI_DAQ;Magnet_Positioner,KST101;</Property>
-	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
-	<Property Name="NI.Project.Description" Type="Str"></Property>
+	<Property Name="CCSymbols" Type="Str">Positioner_Mode,PI;Pulse_Mode,ASG8100;Counter_Mode,NI_DAQ;</Property>
 	<Item Name="My Computer" Type="My Computer">
-		<Property Name="CCSymbols" Type="Str">Magnetic_Positioner,KST101;MW_Channel,1;</Property>
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -16,75 +13,49 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="MW" Type="Folder">
-			<Item Name="MW setup.vi" Type="VI" URL="../Labview_Control_SIC/Useful/MW setup.vi"/>
-			<Item Name="mw.ctl" Type="VI" URL="../Labview_Control_SIC/Useful/mw.ctl"/>
+			<Item Name="MW setup.vi" Type="VI" URL="../Useful/MW setup.vi"/>
+			<Item Name="mw.ctl" Type="VI" URL="../Useful/mw.ctl"/>
 		</Item>
 		<Item Name="Module Add-on CY" Type="Folder">
 			<Item Name="ASG8100" Type="Folder">
-				<Item Name="Replace Subseq.vi" Type="VI" URL="../Labview Library/Libraries/Add-ons CY/Replace Subseq.vi"/>
-				<Item Name="Replace Variable.vi" Type="VI" URL="../Labview Library/Libraries/Add-ons CY/Replace Variable.vi"/>
-				<Item Name="Round Sequence Time.vi" Type="VI" URL="../Labview_Control_SIC/Useful/Round Sequence Time.vi"/>
-				<Item Name="Sequence Transformation To Independent Sequence for Each Channel.vi" Type="VI" URL="../Labview_Control_SIC/Useful/Sequence Transformation To Independent Sequence for Each Channel.vi"/>
-				<Item Name="Loop Subsequence.vi" Type="VI" URL="../Labview Library/Libraries/Add-ons CY/Loop Subsequence.vi"/>
-				<Item Name="Sequence Transformation To 8Channel Time Sequence.vi" Type="VI" URL="../Labview_Control_SIC/Useful/Sequence Transformation To 8Channel Time Sequence.vi"/>
-				<Item Name="Tailor Sequence.vi" Type="VI" URL="../Labview_Control_SIC/Useful/Tailor Sequence.vi"/>
-				<Item Name="ASG Add Delay.vi" Type="VI" URL="../Labview_Control_SIC/Useful/ASG Add Delay.vi"/>
-				<Item Name="Default Delay Time.vi" Type="VI" URL="../Labview_Control_SIC/Useful/Default Delay Time.vi"/>
-				<Item Name="Channel High Level Time.vi" Type="VI" URL="../Labview_Control_SIC/Useful/Channel High Level Time.vi"/>
+				<Item Name="Replace Subseq.vi" Type="VI" URL="../../Labview Library/Libraries/Add-ons CY/Replace Subseq.vi"/>
+				<Item Name="Replace Variable.vi" Type="VI" URL="../../Labview Library/Libraries/Add-ons CY/Replace Variable.vi"/>
 			</Item>
 			<Item Name="Utilities" Type="Folder">
-				<Item Name="Name Without Conflict.vi" Type="VI" URL="../Labview Library/Libraries/Add-ons CY/Name Without Conflict.vi"/>
-				<Item Name="Vi Name Without Library.vi" Type="VI" URL="../Labview Library/Libraries/Add-ons CY/Vi Name Without Library.vi"/>
+				<Item Name="Name Without Conflict.vi" Type="VI" URL="../../Labview Library/Libraries/Add-ons CY/Name Without Conflict.vi"/>
+				<Item Name="Vi Name Without Library.vi" Type="VI" URL="../../Labview Library/Libraries/Add-ons CY/Vi Name Without Library.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Utilities" Type="Folder">
 			<Item Name="TDMS File Operation" Type="Folder">
-				<Item Name="Defragment All tdms in a folder.vi" Type="VI" URL="../Labview_Control_SIC/Useful/Defragment All tdms in a folder.vi"/>
-				<Item Name="Defragment Tdms File.vi" Type="VI" URL="../Labview_Control_SIC/Useful/Defragment Tdms File.vi"/>
-				<Item Name="Change Version.vi" Type="VI" URL="../Labview Library/Test/Change Version.vi"/>
+				<Item Name="Defragment All tdms in a folder.vi" Type="VI" URL="../Useful/Defragment All tdms in a folder.vi"/>
+				<Item Name="Defragment Tdms File.vi" Type="VI" URL="../Useful/Defragment Tdms File.vi"/>
+				<Item Name="Change Version.vi" Type="VI" URL="../../Labview Library/Test/Change Version.vi"/>
 			</Item>
 			<Item Name="Test Tools" Type="Folder">
-				<Item Name="Test Response.vi" Type="VI" URL="../Labview_Control_SIC/Useful/Test Response.vi"/>
-				<Item Name="Autotrace Test Parameter.ctl" Type="VI" URL="../Labview_Control_SIC/Useful/Autotrace Test Parameter.ctl"/>
-				<Item Name="Autotrace Test.vi" Type="VI" URL="../Labview_Control_SIC/Useful/Autotrace Test.vi"/>
-				<Item Name="Test Drift.vi" Type="VI" URL="../Labview_Control_SIC/Useful/Test Drift.vi"/>
-				<Item Name="Test Pi Speed.vi" Type="VI" URL="../Labview_Control_SIC/Useful/Test Pi Speed.vi"/>
-				<Item Name="Test Move Speed.vi" Type="VI" URL="../Labview_Control_SIC/Useful/Test Move Speed.vi"/>
-				<Item Name="Test cwDrift.vi" Type="VI" URL="../Labview_Control_SIC/Useful/Test cwDrift.vi"/>
-				<Item Name="Test Trigger.vi" Type="VI" URL="../Labview_Control_SIC/Useful/Test Trigger.vi"/>
+				<Item Name="Test Response.vi" Type="VI" URL="../Useful/Test Response.vi"/>
+				<Item Name="Autotrace Test Parameter.ctl" Type="VI" URL="../Useful/Autotrace Test Parameter.ctl"/>
+				<Item Name="Autotrace Test.vi" Type="VI" URL="../Useful/Autotrace Test.vi"/>
+				<Item Name="Test Drift.vi" Type="VI" URL="../Useful/Test Drift.vi"/>
 			</Item>
 			<Item Name="Cal Tools" Type="Folder">
-				<Item Name="Shot Noise Calculator.vi" Type="VI" URL="../Labview Library/Libraries/Basic Experiment/Shot Noise Calculator.vi"/>
+				<Item Name="Shot Noise Calculator.vi" Type="VI" URL="../../Labview Library/Libraries/Basic Experiment/Shot Noise Calculator.vi"/>
 			</Item>
 			<Item Name="Adjust Magnetic Field Tools" Type="Folder">
-				<Item Name="Adjust Magnetic Field.vi" Type="VI" URL="../Labview_Control_SIC/Useful/Adjust Magnetic Field.vi"/>
-				<Item Name="Adjust Magnetic Field_Continuous CW.vi" Type="VI" URL="../Labview_Control_SIC/Useful/Adjust Magnetic Field_Continuous CW.vi"/>
+				<Item Name="Adjust Magnetic Field.vi" Type="VI" URL="../Useful/Adjust Magnetic Field.vi"/>
+				<Item Name="Adjust Magnetic Field_Continuous CW.vi" Type="VI" URL="../Useful/Adjust Magnetic Field_Continuous CW.vi"/>
 			</Item>
 			<Item Name="Trace Tools" Type="Folder">
-				<Item Name="Move To Position According to List.vi" Type="VI" URL="../Labview_Control_SIC/Useful/Move To Position According to List.vi"/>
+				<Item Name="Move To Position According to List.vi" Type="VI" URL="../Useful/Move To Position According to List.vi"/>
 			</Item>
 			<Item Name="Fitting" Type="Folder">
-				<Item Name="GaussianFindPeak.vi" Type="VI" URL="../Labview_Control_SIC/Useful/GaussianFindPeak.vi"/>
+				<Item Name="GaussianFindPeak.vi" Type="VI" URL="../Useful/GaussianFindPeak.vi"/>
 			</Item>
-		</Item>
-		<Item Name="TwoPointMeasure" Type="Folder"/>
-		<Item Name="Charge Trap Measurment" Type="Folder">
-			<Item Name="Single Point CW.vi" Type="VI" URL="../Labview_Control_SIC/Useful/Single Point CW.vi"/>
-			<Item Name="Double Point CW.vi" Type="VI" URL="../Labview_Control_SIC/Useful/Double Point CW.vi"/>
 		</Item>
 		<Item Name="Basic Experiment.lvlib" Type="Library" URL="../../Labview Library/Libraries/Basic Experiment/Basic Experiment.lvlib"/>
 		<Item Name="Batch Experiment.lvlib" Type="Library" URL="../../Labview Library/Libraries/Batch Experiment/Batch Experiment.lvlib"/>
-		<Item Name="Axis Enum.ctl" Type="VI" URL="../Labview_Control_SIC/Useful/Axis Enum.ctl"/>
+		<Item Name="Axis Enum.ctl" Type="VI" URL="../Useful/Axis Enum.ctl"/>
 		<Item Name="Read TDMS Data.lvlib" Type="Library" URL="../../Labview Library/Libraries/Read TDMS Data/Library/Read TDMS Data.lvlib"/>
-		<Item Name="Scan With Shift Correction.vi" Type="VI" URL="../Labview Library/Libraries/Shift_Correction/Libraries/Scan With Shift Correction.vi"/>
-		<Item Name="Gaussian Fit 2D Scan.vi" Type="VI" URL="../Labview Library/Libraries/EX_Confocal/Confocal Scan/Confocal UI Module/Gaussian Fit 2D Scan.vi"/>
-		<Item Name="Gaussian Fit 2D with Bound.vi" Type="VI" URL="../Labview Library/Libraries/EX_Confocal/Confocal Scan/Confocal UI Module/Gaussian Fit 2D with Bound.vi"/>
-		<Item Name="Batch Rabi.vi" Type="VI" URL="../Labview Library/Libraries/Batch Experiment/Test/Batch Rabi.vi"/>
-		<Item Name="OnepointRecord.vi" Type="VI" URL="/G/Exp_Log/2024_02_12_ChargeDetection2/OnepointRecord.vi"/>
-		<Item Name="DataSave.vi" Type="VI" URL="/G/Exp_Log/2024_02_12_ChargeDetection2/DataSave.vi"/>
-		<Item Name="Test Microwave Delay.vi" Type="VI" URL="../Labview_Control_SIC/Useful/Test Microwave Delay.vi"/>
-		<Item Name="Test Rotation Shift.vi" Type="VI" URL="../Labview_Control_SIC/Useful/Test Rotation Shift.vi"/>
-		<Item Name="test error.vi" Type="VI" URL="../Labview_Control_SIC/Try/test error.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="instr.lib" Type="Folder">
@@ -364,11 +335,10 @@
 			<Item Name="ANC350v4.2.4.lvlib" Type="Library" URL="../../Labview Library/Libraries/HW_attocube_ANC350/ANC350v4.2.4/ANC350v4.2.4.lvlib"/>
 			<Item Name="ANS Module.lvlib" Type="Library" URL="../../Labview Library/Libraries/HW_attocube_ANS/ANS Module/ANS Module.lvlib"/>
 			<Item Name="ASG 8100 Module.lvlib" Type="Library" URL="../../Labview Library/Libraries/HW_LMMR_ASG8100/LMMR ASG/ASG 8100 Module.lvlib"/>
-			<Item Name="ASG Add Delay.vi" Type="VI" URL="../../Labview_Control_SIC/Useful/ASG Add Delay.vi"/>
+			<Item Name="ASG Add Delay.vi" Type="VI" URL="../Useful/ASG Add Delay.vi"/>
 			<Item Name="ASG Instructions XControl.xctl" Type="XControl" URL="../../Labview Library/Libraries/HW_LMMR_ASG8100/LMMR ASG/ASG Instructions XControl.xctl"/>
 			<Item Name="ASG8X00_x64.dll" Type="Document" URL="../../Labview Library/Libraries/HW_LMMR_ASG8100/LMMR ASG8100/ASG8X00_x64.dll"/>
-			<Item Name="Axis Enum.ctl" Type="VI" URL="../../Labview_Control_SIC/Useful/Axis Enum.ctl"/>
-			<Item Name="Channel High Level Time.vi" Type="VI" URL="../../Labview_Control_SIC/Useful/Channel High Level Time.vi"/>
+			<Item Name="Channel High Level Time.vi" Type="VI" URL="../Useful/Channel High Level Time.vi"/>
 			<Item Name="Check out of Range.vi" Type="VI" URL="../../Labview Library/Libraries/PIScanner_new/Library/Check out of Range.vi"/>
 			<Item Name="CmdLib.dll" Type="Document" URL="/C/Program Files/New Focus/New Focus Picomotor Application/Samples/LabVIEW/Model 8742/LabVIEW 2009/CmdLib.dll"/>
 			<Item Name="Config AF XY - ANS.vi" Type="VI" URL="../../Labview Library/Libraries/EX_Confocal/Confocal Scan/Config Positioner/Config AF XY - ANS.vi"/>
@@ -389,7 +359,7 @@
 			<Item Name="Confocal UI Module.lvlib" Type="Library" URL="../../Labview Library/Libraries/EX_Confocal/Confocal Scan/Confocal UI Module/Confocal UI Module.lvlib"/>
 			<Item Name="Counter - NI DAQ.lvclass" Type="LVClass" URL="../../Labview Library/Libraries/HW_NI_CTR/Counter - NI DAQ Class/Counter - NI DAQ.lvclass"/>
 			<Item Name="Counter.lvclass" Type="LVClass" URL="../../Labview Library/Libraries/FW_HAL/Counter Class/Counter.lvclass"/>
-			<Item Name="Default Delay Time.vi" Type="VI" URL="../../Labview_Control_SIC/Useful/Default Delay Time.vi"/>
+			<Item Name="Default Delay Time.vi" Type="VI" URL="../Useful/Default Delay Time.vi"/>
 			<Item Name="DeviceClose.vi" Type="VI" URL="../../../Program Files/New Focus/New Focus Picomotor Application/Samples/LabVIEW/Model 8742/LabVIEW 2009/Device VIs/DeviceClose.vi"/>
 			<Item Name="DeviceOpen.vi" Type="VI" URL="../../../Program Files/New Focus/New Focus Picomotor Application/Samples/LabVIEW/Model 8742/LabVIEW 2009/Device VIs/DeviceOpen.vi"/>
 			<Item Name="E727_Configuration_Setup.vi" Type="VI" URL="../../Labview Library/Libraries/HW_PI/E-727/E727_Configuration_Setup.vi"/>
@@ -399,7 +369,6 @@
 			</Item>
 			<Item Name="Gaussian Fit 2D Scan.vi" Type="VI" URL="../../Labview Library/Libraries/EX_Confocal/Confocal Scan/Confocal UI Module/Gaussian Fit 2D Scan.vi"/>
 			<Item Name="Gaussian Fit 2D with Bound.vi" Type="VI" URL="../../Labview Library/Libraries/EX_Confocal/Confocal Scan/Confocal UI Module/Gaussian Fit 2D with Bound.vi"/>
-			<Item Name="GaussianFindPeak.vi" Type="VI" URL="../../Labview_Control_SIC/Useful/GaussianFindPeak.vi"/>
 			<Item Name="GCSTranslator.dll" Type="Document" URL="../../../Exp Programs/LabView Programs/PI/E-727/Low Level/GCSTranslator.dll"/>
 			<Item Name="GCSTranslator.dll" Type="Document" URL="../../Labview Library/Libraries/HW_PI/E-727/Low Level/GCSTranslator.dll"/>
 			<Item Name="GetDiscoveredDevices.vi" Type="VI" URL="../../../Program Files/New Focus/New Focus Picomotor Application/Samples/LabVIEW/Model 8742/LabVIEW 2009/Sample8742UI/GetDiscoveredDevices.vi"/>
@@ -426,9 +395,6 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="MW Setup.ctl" Type="VI" URL="../../Labview Library/Libraries/Basic Experiment/Backup/MW Setup.ctl"/>
-			<Item Name="MW setup.vi" Type="VI" URL="../../Labview_Control_SIC/Useful/MW setup.vi"/>
-			<Item Name="mw.ctl" Type="VI" URL="../../Labview_Control_SIC/Useful/mw.ctl"/>
-			<Item Name="Name Without Conflict.vi" Type="VI" URL="../../Labview Library/Libraries/Add-ons CY/Name Without Conflict.vi"/>
 			<Item Name="NewFocus Model8742 Module.lvlib" Type="Library" URL="../../Labview Library/Libraries/HW_NewFocus_Model8742/Libraries/NewFocus Model8742 Module/NewFocus Model8742 Module.lvlib"/>
 			<Item Name="nF Scanner.lvlib" Type="Library" URL="../../Labview Library/Libraries/HW_nanoFAKTUR/nFScanner/Libraries/nF Scanner/nF Scanner.lvlib"/>
 			<Item Name="NI DAQ Counter.lvlib" Type="Library" URL="../../Labview Library/Libraries/HW_NI_CTR/NI DAQ Counter/NI DAQ Counter.lvlib"/>
@@ -455,16 +421,13 @@
 			<Item Name="PulseBlaster Module.lvlib" Type="Library" URL="../../Labview Library/Libraries/HW_SpinCore_PB/Module/PulseBlaster Module.lvlib"/>
 			<Item Name="Register Position Ref.vi" Type="VI" URL="../../Labview Library/Libraries/PIScanner_new/Library/Register Position Ref.vi"/>
 			<Item Name="RelativeMove.vi" Type="VI" URL="../../../Program Files/New Focus/New Focus Picomotor Application/Samples/LabVIEW/Model 8742/LabVIEW 2009/Command VIs/RelativeMove.vi"/>
-			<Item Name="Replace Subseq.vi" Type="VI" URL="../../Labview Library/Libraries/Add-ons CY/Replace Subseq.vi"/>
-			<Item Name="Replace Variable.vi" Type="VI" URL="../../Labview Library/Libraries/Add-ons CY/Replace Variable.vi"/>
 			<Item Name="Rigol Signal Generator Module.lvlib" Type="Library" URL="../../Labview Library/Libraries/HW_Rigol_DSG/Rigol Signal Generator Module/Rigol Signal Generator Module.lvlib"/>
-			<Item Name="Round Sequence Time.vi" Type="VI" URL="../../Labview_Control_SIC/Useful/Round Sequence Time.vi"/>
+			<Item Name="Round Sequence Time.vi" Type="VI" URL="../Useful/Round Sequence Time.vi"/>
 			<Item Name="Scan.vi" Type="VI" URL="../../Labview Library/Libraries/Basic Experiment/Backup/Scan.vi"/>
-			<Item Name="Sequence Transformation To 8Channel Time Sequence.vi" Type="VI" URL="../../Labview_Control_SIC/Useful/Sequence Transformation To 8Channel Time Sequence.vi"/>
-			<Item Name="Sequence Transformation To Independent Sequence for Each Channel.vi" Type="VI" URL="../../Labview_Control_SIC/Useful/Sequence Transformation To Independent Sequence for Each Channel.vi"/>
+			<Item Name="Sequence Transformation To 8Channel Time Sequence.vi" Type="VI" URL="../Useful/Sequence Transformation To 8Channel Time Sequence.vi"/>
+			<Item Name="Sequence Transformation To Independent Sequence for Each Channel.vi" Type="VI" URL="../Useful/Sequence Transformation To Independent Sequence for Each Channel.vi"/>
 			<Item Name="SetDegree.vi" Type="VI" URL="../../Labview Library/Libraries/Libraries/ElectricRotatorModule/SetDegree.vi"/>
 			<Item Name="Shift_Correction.lvlib" Type="Library" URL="../../Labview Library/Libraries/Shift_Correction/Libraries/Shift_Correction/Shift_Correction.lvlib"/>
-			<Item Name="Shot Noise Calculator.vi" Type="VI" URL="../../Labview Library/Libraries/Basic Experiment/Shot Noise Calculator.vi"/>
 			<Item Name="Shutdown.vi" Type="VI" URL="../../../Program Files/New Focus/New Focus Picomotor Application/Samples/LabVIEW/Model 8742/LabVIEW 2009/Device VIs/Shutdown.vi"/>
 			<Item Name="Single Axis Data.ctl" Type="VI" URL="../../Labview Library/Libraries/HW_nanoFAKTUR/nFScanner/Libraries/nF Scanner/Single Axis Data.ctl"/>
 			<Item Name="SpinCore PulseBluster.lvlib" Type="Library" URL="../../Labview Library/Libraries/HW_SpinCore_PB/SpinCore PulseBlaster/SpinCore PulseBluster.lvlib"/>
@@ -473,7 +436,7 @@
 			<Item Name="Stop Module.vi" Type="VI" URL="../../Labview Library/Libraries/Libraries/ElectricRotatorModule/Stop Module.vi"/>
 			<Item Name="Stop Pulse.vi" Type="VI" URL="../../Labview Library/Libraries/FW_HAL/Pulse Class/Stop Pulse.vi"/>
 			<Item Name="Synchronize Module Events.vi" Type="VI" URL="../../Labview Library/Libraries/Libraries/ElectricRotatorModule/Synchronize Module Events.vi"/>
-			<Item Name="Tailor Sequence.vi" Type="VI" URL="../../Labview_Control_SIC/Useful/Tailor Sequence.vi"/>
+			<Item Name="Tailor Sequence.vi" Type="VI" URL="../Useful/Tailor Sequence.vi"/>
 			<Item Name="Thorlabs.MotionControl.Controls.dll" Type="Document" URL="../../Thorlabs Kinesis/Thorlabs.MotionControl.Controls.dll"/>
 			<Item Name="Thorlabs.MotionControl.GenericMotorCLI.dll" Type="Document" URL="../../Thorlabs Kinesis/Thorlabs.MotionControl.GenericMotorCLI.dll"/>
 			<Item Name="Thorlabs.MotionControl.KCube.StepperMotorCLI.dll" Type="Document" URL="../../Thorlabs Kinesis/Thorlabs.MotionControl.KCube.StepperMotorCLI.dll"/>
@@ -481,7 +444,6 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Utilities.lvlib" Type="Library" URL="../../Labview Library/Libraries/UT_Utilities/Utilities.lvlib"/>
-			<Item Name="Vi Name Without Library.vi" Type="VI" URL="../../Labview Library/Libraries/Add-ons CY/Vi Name Without Library.vi"/>
 			<Item Name="winmm.dll" Type="Document" URL="winmm.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
